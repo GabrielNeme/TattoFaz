@@ -1,0 +1,66 @@
+import { StyleSheet,Platform  } from 'react-native';
+
+export const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      paddingTop: Platform.OS === 'ios' ? 40 : 20,
+      paddingHorizontal: 20,
+      backgroundColor: '#f9f9f9',
+    },
+    header: {
+      marginTop: -20,
+      marginLeft: -20,
+      height: 160,
+      width: 450,
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      paddingVertical: 20,
+      backgroundColor: '#000',
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.1,
+      shadowRadius: 8,
+      elevation: 3,
+    },
+    logo: {
+      width: 150,
+      height: 150,
+      marginTop: 30,
+      marginLeft: 14,
+      resizeMode: 'contain',
+    },
+    messageButton: {
+      marginTop: 30,
+      marginRight: 48,
+    },
+    feedItem: {
+      flex: 1,
+      marginTop: 20,
+      marginBottom: 10,
+      borderRadius: 8,
+      overflow: 'hidden',
+      shadowColor: '#000',
+    },
+    imageContainer: {
+      position: 'relative',
+    },
+    feedImage: {
+      width: '100%',
+      height: 300,  
+      borderRadius: 20, 
+      marginBottom: 10, 
+      resizeMode: 'cover', 
+    },
+    feedText: {
+      position: 'absolute',
+      bottom: 10,
+      right: 10,
+      fontSize: 30,
+      fontWeight: 'bold',
+      color: '#fff',
+      textAlign: 'right',
+      padding: 5,
+      borderRadius: 5,
+    },
+});
